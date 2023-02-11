@@ -1,0 +1,106 @@
+$color-primary: #007a61;
+$color-secondary: #009879;
+
+@mixin btn-color {
+    color: #ffffff;
+    background-color: #007a61;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1051;
+}
+.modal-title {
+    flex: 1;
+    text-align: center;
+    color: $color-primary;
+}
+.modal-body {
+    .form-group {
+        margin-bottom: 4px;
+        label {
+            margin-bottom: 1px;
+        }
+        .boder-red {
+            border-color: red;
+        }
+        .sp-thongbao {
+            font-size: 14px;
+            color: red;
+            margin-left: 2px;
+            display: none;
+        }
+    }
+}
+.modal-footer {
+    button {
+        background-color: $color-primary;
+        &:hover {
+            background-color: $color-secondary
+        }
+    }
+
+}
+
+.navbar {
+    @include btn-color();
+}
+.nav.nav-tabs {
+    a {
+        color: #191919;
+    }
+    a.active {
+        color: $color-primary;
+    }
+}
+
+#btnThemNguoiDung {
+    @include btn-color();
+    &:hover {
+        background-color: $color-secondary
+    }
+}
+#basic-addon2 {
+    @include btn-color();
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    th,
+    td {
+        padding: 12px 15px;
+    }
+    thead {
+        tr {
+            background-color: $color-primary;
+            color: #ffffff;
+            text-align: left;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #DDDDDD;
+            &:nth-of-type(even) {
+                color: $color-secondary;
+            }
+            .img-product {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    }
+}

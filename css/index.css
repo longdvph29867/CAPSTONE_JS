@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1051;
+}
+
+.modal-title {
+  flex: 1;
+  text-align: center;
+  color: #007a61;
+}
+
+.modal-body .form-group {
+  margin-bottom: 4px;
+}
+.modal-body .form-group label {
+  margin-bottom: 1px;
+}
+.modal-body .form-group .boder-red {
+  border-color: red;
+}
+.modal-body .form-group .sp-thongbao {
+  font-size: 14px;
+  color: red;
+  margin-left: 2px;
+  display: none;
+}
+
+.modal-footer button {
+  background-color: #007a61;
+}
+.modal-footer button:hover {
+  background-color: #009879;
+}
+
+.navbar {
+  color: #ffffff;
+  background-color: #007a61;
+}
+
+.nav.nav-tabs a {
+  color: #191919;
+}
+.nav.nav-tabs a.active {
+  color: #007a61;
+}
+
+#btnThemNguoiDung {
+  color: #ffffff;
+  background-color: #007a61;
+}
+#btnThemNguoiDung:hover {
+  background-color: #009879;
+}
+
+#basic-addon2 {
+  color: #ffffff;
+  background-color: #007a61;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table th,
+table td {
+  padding: 12px 15px;
+}
+table thead tr {
+  background-color: #007a61;
+  color: #ffffff;
+  text-align: left;
+}
+table tbody tr {
+  border-bottom: 1px solid #DDDDDD;
+}
+table tbody tr:nth-of-type(even) {
+  color: #009879;
+}
+table tbody tr .img-product {
+  width: 100%;
+  max-width: 200px;
+}/*# sourceMappingURL=index.css.map */
